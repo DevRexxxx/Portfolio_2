@@ -1,0 +1,44 @@
+.cursorDot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #58a6ff;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out, background-color 0.3s ease;
+}
+
+.cursorOutline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 44px;
+  height: 44px;
+  border: 1.5px solid rgba(88, 166, 255, 0.6); /* Matching developer blue */
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease, transform 0.15s ease-out, border-color 0.3s ease;
+}
+
+.cursorDotHover {
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
+.cursorOutlineHover {
+  width: 60px;
+  height: 60px;
+  border-color: rgba(88, 166, 255, 0.8);
+  background-color: rgba(88, 166, 255, 0.05);
+}
+
+@media (max-width: 768px) {
+  .cursorDot, .cursorOutline {
+    display: none;
+  }
+}

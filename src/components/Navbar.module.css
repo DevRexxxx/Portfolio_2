@@ -1,0 +1,139 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: var(--color-bg-base);
+  border-bottom: 1px solid var(--color-border-subtle);
+  padding: var(--space-4) 0;
+  transition: all 0.3s ease;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-body), sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+}
+
+.logo:hover {
+  color: var(--color-accent);
+}
+
+.nav {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.navLink {
+  position: relative;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-secondary);
+  transition: color 0.3s ease;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--color-accent);
+  transition: width 0.3s ease;
+}
+
+.navLink:hover {
+  color: var(--color-text-primary);
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.mobileToggle {
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 101;
+}
+
+.hamburger {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--color-text-primary);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: background 0.2s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: var(--color-text-primary);
+  left: 0;
+  transition: transform 0.2s ease, top 0.2s ease;
+}
+
+.hamburger::before { top: -8px; }
+.hamburger::after { top: 8px; }
+
+.hamburger.open { background: transparent; }
+.hamburger.open::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+.hamburger.open::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .mobileToggle {
+    display: block;
+  }
+  
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--color-bg-base);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-6);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 100;
+  }
+  
+  .nav.navOpen {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .navLink {
+    font-size: 1.5rem;
+  }
+}

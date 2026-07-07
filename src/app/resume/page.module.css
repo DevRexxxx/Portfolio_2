@@ -1,0 +1,164 @@
+.resumeContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-4);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+}
+
+.header {
+  border-bottom: 2px solid var(--color-border);
+  padding-bottom: var(--space-4);
+  margin-bottom: var(--space-6);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.name {
+  font-size: 2.5rem;
+  margin: 0 0 var(--space-2) 0;
+  color: var(--color-text);
+}
+
+.title {
+  font-size: 1.25rem;
+  color: var(--color-accent);
+  margin: 0;
+  font-weight: 500;
+}
+
+.contactInfo {
+  text-align: right;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.contactInfo p {
+  margin: 0 0 var(--space-1) 0;
+}
+
+.contactInfo a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.section {
+  margin-bottom: var(--space-6);
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border-subtle);
+  padding-bottom: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.item {
+  margin-bottom: var(--space-4);
+}
+
+.itemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: var(--space-2);
+}
+
+.itemTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.itemMeta {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.itemDescription {
+  margin: 0;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skillBadge {
+  background-color: var(--color-bg-subtle);
+  border: 1px solid var(--color-border-subtle);
+  padding: var(--space-1) var(--space-3);
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: var(--color-text);
+}
+
+.printControls {
+  margin-bottom: var(--space-6);
+  display: flex;
+  justify-content: center;
+}
+
+.printButton {
+  background-color: var(--color-accent);
+  color: #000;
+  border: none;
+  padding: var(--space-3) var(--space-6);
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.printButton:hover {
+  opacity: 0.9;
+}
+
+@media print {
+  /* Reset background and text for print */
+  .resumeContainer {
+    background-color: white !important;
+    color: black !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Hide print button */
+  .printControls {
+    display: none !important;
+  }
+
+  /* Override variables for printing */
+  .resumeContainer {
+    --color-text: #000;
+    --color-text-muted: #333;
+    --color-border: #000;
+    --color-border-subtle: #ccc;
+    --color-accent: #000;
+    --color-bg-subtle: transparent;
+  }
+
+  .name {
+    color: black !important;
+  }
+
+  .title {
+    color: black !important;
+  }
+
+  .skillBadge {
+    border-color: #999 !important;
+    color: black !important;
+  }
+}

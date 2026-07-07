@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 3/4;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  margin: 0 auto;
+}
+
+.avatarWrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.1s ease-out;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.avatarImage {
+  object-fit: contain;
+  z-index: 2;
+  mix-blend-mode: screen; /* Removes the black background */
+  filter: drop-shadow(0 0 20px rgba(88, 166, 255, 0.2)); /* Subtle developer glow */
+}

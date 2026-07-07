@@ -1,0 +1,44 @@
+{
+  "basics": {
+    "name": "Eshaan Singh Deo",
+    "label": "Backend & AI Developer",
+    "email": "contact@eshaansinghdeo.com",
+    "location": {
+      "city": "Lucknow",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "eshaan-singh-deo-ba669433a",
+        "url": "https://www.linkedin.com/in/eshaan-singh-deo-ba669433a"
+      },
+      {
+        "network": "GitHub",
+        "username": "DevRexxxx",
+        "url": "https://github.com/DevRexxxx"
+      }
+    ]
+  },
+  "work": [],
+  "education": [
+    {
+      "institution": "Shri Ramswaroop Memorial College of Engineering and Management (SRMCEM)",
+      "url": "https://srmcem.ac.in/",
+      "area": "Computer Science and Engineering",
+      "studyType": "Bachelor of Technology (B.Tech)",
+      "startDate": "2024-08-01",
+      "endDate": "2028-05-01",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "2x Hackathon Finalist",
+      "date": "2024",
+      "awarder": "HackX Vidyouth",
+      "summary": "Achieved finalist status in multiple competitive hackathons."
+    }
+  ]
+}
