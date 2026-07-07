@@ -75,3 +75,12 @@ export const skillsGroups = [
     items: ["System Architecture", "API Design", "Data Structures", "Algorithms", "Performance Optimization"]
   }
 ];
+
+export const galleryItems = [
+  {
+    id: 1,
+    image: '/images/hero-bg.jpg',
+    caption: 'Workspace Setup',
+    tag: 'Behind the Scenes'
+  }
+];

@@ -26,8 +26,7 @@ export default function WorkPage() {
               <Image src={item.image} alt={item.title} fill sizes="(max-width: 768px) 100vw, 50vw" className={styles.image} style={{ objectFit: 'cover' }} priority={index < 2} />
             </div>
             <div className={styles.meta}>
-              <span className={`meta-label ${styles.tag}`}>{item.category}</span>
-              <span className={`meta-label ${styles.year}`}>{item.year}</span>
+              <span className={`meta-label ${styles.tag}`}>{item.tags?.join(' • ')}</span>
             </div>
             <h2 className={styles.workTitle}>{item.title}</h2>
             <p className={styles.description}>{item.description}</p>
