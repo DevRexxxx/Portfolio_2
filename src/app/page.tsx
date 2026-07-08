@@ -88,8 +88,8 @@ export default function Home() {
                   optimizing database queries, and ensuring high availability for critical systems.
                 </p>
                 <p>
-                  When I'm not architecting APIs or optimizing SQL, you can usually find me participating in hackathons 
-                  or exploring the latest in generative AI and system design. Let's build something robust.
+                  When I&apos;m not architecting APIs or optimizing SQL, you can usually find me participating in hackathons 
+                  or exploring the latest in generative AI and system design. Let&apos;s build something robust.
                 </p>
               </div>
             </FadeIn>
@@ -222,7 +222,7 @@ export default function Home() {
               <span className={styles.studioOffer}>Open to opportunities</span>
               <h2>Looking for a passionate backend developer?</h2>
               <p>I love collaborating on hackathons, open-source projects, and exciting internships.</p>
-              <a href="mailto:contact@eshaansinghdeo.com" className={styles.btnPrimary} style={{ marginTop: 'var(--space-2)' }}>Let's connect</a>
+              <a href="mailto:contact@eshaansinghdeo.com" className={styles.btnPrimary} style={{ marginTop: 'var(--space-2)' }}>Let&apos;s connect</a>
             </div>
           </FadeIn>
         </section>
@@ -232,7 +232,7 @@ export default function Home() {
           <FadeIn>
             <span className={styles.eyebrow}>Contact</span>
             <div className={styles.contactSection}>
-              <h2>Let's build something.</h2>
+              <h2>Let&apos;s build something.</h2>
               <p>Currently open for internships, collaborative projects, or junior backend roles.</p>
               <div className={styles.contactActions}>
                 <a href="mailto:contact@eshaansinghdeo.com" className={styles.btnPrimary}>Send an email</a>
