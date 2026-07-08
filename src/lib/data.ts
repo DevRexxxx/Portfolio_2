@@ -6,7 +6,7 @@ export const workItems = [
     tags: ['TypeScript', 'React', 'AI', 'Node.js'],
     image: '/images/ram_vista_logo.png',
     githubLink: 'https://github.com/DevRexxxx/ram-vista',
-    deploymentLink: '',
+    deploymentLink: 'https://ram-vista.pages.dev',
   },
   {
     id: 'digital-twin',
@@ -24,7 +24,7 @@ export const workItems = [
     tags: ['JavaScript', 'HTML5 Audio', 'CSS'],
     image: '/images/music_player_logo.png',
     githubLink: 'https://github.com/DevRexxxx/Music_Player',
-    deploymentLink: '',
+    deploymentLink: 'https://music-player-vert-psi.vercel.app',
   },
   {
     id: 'ecopulse',
@@ -33,7 +33,7 @@ export const workItems = [
     tags: ['TypeScript', 'Next.js', 'Tailwind'],
     image: '/images/ecopulse_logo.png',
     githubLink: 'https://github.com/DevRexxxx/EcoPulse',
-    deploymentLink: '',
+    deploymentLink: 'https://ecopulse-app.web.app',
   }
 ];
 

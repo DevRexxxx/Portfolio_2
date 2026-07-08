@@ -219,10 +219,10 @@ export default function Home() {
         <section style={{ marginTop: 'var(--space-9)' }}>
           <FadeIn>
             <div className={styles.studioBanner}>
-              <span className={styles.studioOffer}>Available for freelance</span>
-              <h2>Need a robust backend architecture?</h2>
-              <p>I help startups and founders build scalable systems from the ground up.</p>
-              <a href="mailto:contact@eshaansinghdeo.com" className={styles.btnPrimary} style={{ marginTop: 'var(--space-2)' }}>Let's talk architecture</a>
+              <span className={styles.studioOffer}>Open to opportunities</span>
+              <h2>Looking for a passionate backend developer?</h2>
+              <p>I love collaborating on hackathons, open-source projects, and exciting internships.</p>
+              <a href="mailto:contact@eshaansinghdeo.com" className={styles.btnPrimary} style={{ marginTop: 'var(--space-2)' }}>Let's connect</a>
             </div>
           </FadeIn>
         </section>
@@ -233,7 +233,7 @@ export default function Home() {
             <span className={styles.eyebrow}>Contact</span>
             <div className={styles.contactSection}>
               <h2>Let's build something.</h2>
-              <p>Currently open for new opportunities and freelance backend architecture projects.</p>
+              <p>Currently open for internships, collaborative projects, or junior backend roles.</p>
               <div className={styles.contactActions}>
                 <a href="mailto:contact@eshaansinghdeo.com" className={styles.btnPrimary}>Send an email</a>
                 <a href="https://github.com/DevRexxxx" target="_blank" rel="noopener noreferrer" className={styles.btnGhost}>GitHub</a>
