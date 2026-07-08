@@ -21,7 +21,7 @@ export default function Footer() {
           <h3 className={styles.heading}>Socials</h3>
           <a href="https://github.com/DevRexxxx" target="_blank" rel="noopener noreferrer" className={styles.link}>GitHub</a>
           <a href="https://www.linkedin.com/in/eshaan-singh-deo-ba669433a" target="_blank" rel="noopener noreferrer" className={styles.link}>LinkedIn</a>
-          <a href="https://www.geeksforgeeks.org/user/eshaansinghdeo/" target="_blank" rel="noopener noreferrer" className={styles.link}>GeeksforGeeks</a>
+          <a href="https://www.instagram.com/im.esd_18?igsh=N2duNWN3NThvNmg3" target="_blank" rel="noopener noreferrer" className={styles.link}>Instagram</a>
         </div>
         <div className={styles.column}>
           <h3 className={styles.heading}>Contact</h3>
